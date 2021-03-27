@@ -1,0 +1,23 @@
+@import '../..//styles/colors.scss';
+
+.cardRow {
+	//background-color: var(--normalColor);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 5px 0;
+	border-radius: 8px;
+}
+
+.cardRowBorder {
+	border: 1px solid var(--secondaryBorder);
+}
+
+.cardRowTransparent {
+	background: none;
+}
+.cardRowScroll{
+	max-height: 143px;
+	 overflow-x: auto;
+	
+}

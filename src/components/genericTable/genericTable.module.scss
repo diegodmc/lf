@@ -1,0 +1,125 @@
+@import '../..//styles/colors.scss';
+
+.table {
+  background: var(--normalColor);
+  border-spacing: 0px;
+  width: 100%;
+  margin: 8px auto;
+  padding: 8px;
+  table-layout: fixed;
+ // flex: 1 1;
+  
+  * {
+    position: relative;
+  }
+
+  thead tr th {
+    height: 40px;
+    font-weight: 500;
+    color: var(--normalText);
+    max-height: 22px;
+    //white-space: nowrap;
+  }
+
+  thead tr .description {
+    background: var(--headerTable);  
+    //white-space: nowrap;
+    //padding: 12px 32px;   
+  }
+
+  tbody tr {
+    height: 35px;
+  }
+
+  td, th {
+    text-align: left;
+    color: var(--normalText);
+    padding: 0px;
+    word-wrap: break-word !important;
+    font-size: 0.9em;
+    border-right: solid 1px var(--border);  
+    border-bottom: solid 1px var(--border);  
+   // padding: 12px 31px;
+    font-weight: 500;
+    //white-space: nowrap;
+  }
+
+  td.l, th.l {
+    text-align: right;
+    //white-space: nowrap;
+  }
+
+  td.c, th.c {
+    text-align: center;
+  }
+
+  td.r, th.r {
+    text-align: center;
+  }
+  tr.lineParent{
+    background-color: var(--lineParentTable);
+  }
+  tr.lineChildren{
+    background-color: var(--lineChildrenTable);
+  }
+  background: var(--headerTable);
+  
+  tr:first-child th {
+    border-top: solid 1px var(--border);
+  }
+
+  tr th:first-child, tr td:first-child {
+    border-left: solid 1px var(--border);
+  }
+
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 4px;
+  }
+
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 4px;
+  }
+
+  tr:first-child th:first-child {
+    border-top-left-radius: 4px;
+  }
+
+  tr:first-child th:last-child {
+    border-top-right-radius: 4px;
+  }
+}
+
+
+.searchFieldContainer { 
+	border: 1px solid var(--secondaryBorder);
+	border-radius: 4px;
+	display: flex;
+	flex: 1;
+	padding: 5px;
+}
+.searchField {
+	border: none;
+	outline: none;
+	padding-left: 3px;
+  width: calc(100% - 25px);
+}
+
+.searchIcon {
+	color: var(--secondaryText);
+}
+
+.removeCell {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.editCell {
+  color: var(--thirdText);
+  cursor: pointer;
+}
+
+.actionCell {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--secondaryText);
+}

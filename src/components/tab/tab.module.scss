@@ -1,0 +1,65 @@
+@import '../..//styles/colors.scss';
+
+$tabBorder: 1px solid var(--thirdBorder);
+
+.tabContainer {
+	display: flex;
+	align-items: center;
+	margin-top: 8px;
+	justify-content: space-between;
+}
+
+.tab {
+	background-color: var(--normalColor);
+	border-left: $tabBorder;
+	border-radius: 4px 4px 0 0;
+	color: var(--primaryText);
+	padding: 12px 19px;
+	text-align: center;
+	font-weight: 500;
+	cursor: pointer;
+	font-size: 0.9em;
+}
+.tab:hover {
+	background-color: var(--normalColor);
+	border-left: $tabBorder;
+	border-radius: 4px 4px 0 0;
+	font-weight: 500;
+	color: var(--primaryText);
+	padding: 12px 31px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 0.9em;
+	border-bottom: 2px solid var(--secondaryColor);
+	
+}
+.tabContent {
+	background-color: var(--normalColor);
+  	border: $tabBorder;
+	//margin-top: -1px;
+	max-width: 93vw;
+	//padding: 15px;
+	
+}
+/*
+.tabContentNotSelected {
+	background-color: var(--normalColor);
+  	border: $tabBorder;
+	margin-top: -1px;
+	min-height: calc(100% - 170px);
+	padding: 8px;
+	//min-width: 10px;
+	//max-width: calc(100% - 100px);
+}*/
+
+.selected {
+	//border: 1px solid var(--secondaryColor);
+	border-bottom: 2px solid var(--secondaryColor);
+	font-weight: bold;
+}
+
+.complete {
+	color: var(--primaryText);
+	background-color: var(--secondaryColor);
+	border-bottom: 1px solid var(--secondaryColor);
+}

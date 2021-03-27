@@ -1,0 +1,46 @@
+@import '../..//styles/colors.scss';
+
+.selectionLabel {
+	color: var(--secondaryBorder);
+	border: 0;
+	padding: 5px 8px 5px 8px;
+	margin:4px 6px -3px 2px;
+    border-radius: 4px !important;
+    outline: none;
+	background-color: var(--secondaryColor);
+	overflow: hidden;
+	min-width: 150px;
+	max-width: 150px;
+	//white-space: nowrap;
+	//display: inline-flex;
+	//align-items: center;
+}
+
+.selectionLabel svg {
+	position: relative !important;
+	left: 3px !important;
+	top: 4px !important;
+	cursor: pointer;
+	color: var(--primaryColor);
+}
+
+.selectionLabelScroll {
+	color: var(--secondaryBorder);
+	border: 0;
+	padding: 0px 8px 7px 8px;
+	margin: 3px 8px 9px 0px;
+    border-radius: 4px !important;
+    outline: none;
+	background-color: var(--secondaryColor);
+	overflow: hidden;
+	min-width: 150px;
+	max-width: 100%;
+	top: 4px !important;
+}
+.selectionLabelScroll svg {
+	position: relative !important;
+	left: 0px !important;
+    top: 4px !important;
+	cursor: pointer;
+	color: var(--primaryColor);
+}

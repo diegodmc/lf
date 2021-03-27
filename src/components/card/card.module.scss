@@ -1,0 +1,14 @@
+@import '../..//styles/colors.scss';
+
+.card {
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.cardBorder {
+	border: 1px solid var(--secondaryBorder);
+}
+
+.cardBackground {
+	background-color: var(--normalColor);
+}

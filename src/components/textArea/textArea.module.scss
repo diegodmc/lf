@@ -1,0 +1,17 @@
+@import '../..//styles/colors.scss';
+
+.textAreaContainer {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	> textArea {
+		border: 1px solid var(--secondaryBorder);
+		border-radius: 4px;
+		color: var(--normalText);
+		margin-top: 8px;
+		padding: 10px 5px;
+		outline: none;
+		resize: none;
+	}
+}

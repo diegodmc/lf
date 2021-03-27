@@ -1,0 +1,139 @@
+@import '../..//styles/colors.scss';
+
+.button {
+	border: 0;
+	padding: 10px 0;
+	//border-radius: 60px;
+	outline: none;
+	width: 120px;
+	cursor: pointer;
+	font-size: 0.9em;
+	border-radius: 24px;
+	
+	
+}
+.confirmButton {
+	background-color: var(--secondaryColor);
+	color: var(--normalColor);
+}
+.neutralButton {
+	background-color: var(--primaryColor);
+	color: var(--normalColor);
+}
+.removeButton {
+	background-color: var(--primaryColor);
+	color: var(--primaryText);
+}
+.disabledButton {
+	background-color: #ccc;
+	color: #eee;
+	cursor: not-allowed;
+}
+.roundButton {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	font-weight: 500;
+}
+
+
+.activeButton {
+background: var(--componentColor) 0% 0% no-repeat padding-box;
+border: 1px solid var(--headerTable);
+border-radius: 24px;
+opacity: 1;
+padding-right: 8px;
+padding-bottom: 10px;
+width: 125px;
+height: 35px;
+opacity: 1;
+}
+.activeButton:hover {
+	
+background: var(--secondaryColor) 0% 0% no-repeat padding-box;
+border: 1px solid var(--headerTable);
+border-radius: 24px;
+opacity: 1;
+color: var(--secondaryBorder);
+padding-right: 8px;
+padding-bottom: 10px;
+width: 125px;
+height: 35px;
+opacity: 1;
+}
+.activeOnButton {
+	background: var(--secondaryColor) 0% 0% no-repeat padding-box;
+	color: var(--secondaryBorder);
+	padding-right: 8px;
+	padding-bottom: 10px;
+	width: 125px;
+	height: 35px;
+	border-radius: 24px;
+	opacity: 1;
+    text-align: center;
+    font: normal normal normal 16px/12px;
+    letter-spacing: 0px;
+  
+}
+
+.activeButtonAll {
+	background: var(--componentColor) 0% 0% no-repeat padding-box;
+	border-radius: 1px;
+	color: var(--secondaryBorder);
+	border: 0;
+	padding: 8px;
+	margin: 0px;
+    outline: none;
+	overflow: hidden;
+	flex: 1;
+	height: 39.5px;
+	top: 10px;
+	text-align: center;
+  	font: normal normal normal 16px/12px;
+  	letter-spacing: 0px;
+  	opacity: 1;
+	}
+	.activeButtonAll:hover {
+		
+	background: var(--secondaryColor) 0% 0% no-repeat padding-box;
+	border-radius: 1px;
+	opacity: 1;
+	color: var(--secondaryBorder);
+	padding: 8px;
+	height: 39.5px;
+	top: 10px;
+	color: var(--secondaryBorder);
+	border: 0;
+	padding: 0px 8px 4px 8px;
+	margin: 0px;
+    outline: none;
+	overflow: hidden;
+	position: relative;
+	flex: 1;
+	text-align: center;
+  	font: normal normal normal 16px/12px;
+  	letter-spacing: 0px;
+  	
+	}
+	.activeOnButtonAll {
+		background: var(--secondaryColor) 0% 0% no-repeat padding-box;
+		color: var(--secondaryBorder);
+		padding: 8px;
+		height: 39.5px;
+		top: 10px;
+		border-radius: 1px;
+		opacity: 1;
+		color: var(--secondaryBorder);
+		border: 0;
+		padding: 0px 8px 4px 8px;
+		margin: 0px;
+		outline: none;
+		background-color: var(--secondaryColor);
+		overflow: hidden;
+		flex: 1;
+		text-align: center;
+  		font: normal normal normal 16px/12px;
+  		letter-spacing: 0px;
+  
+  
+	}
